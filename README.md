@@ -26,15 +26,17 @@ then visit `http://localhost:4000/` in you browser.
 
 If you want to run frontend as well make sure to change all the `featch url` to `localhost`
 
-# Features
+# Feature
+ 
 - See what you type, live errors, live timer, displays
 
-<img src='./images/error.png' />
-- Login and Signup system to record user test history.
+<img src='./images/error.png' />.
+- Login and Signup system to record user test history
 
-<img src='./images/signup.png' />
+<img src='./images/signup.png' />.
 - Account system
 
-<img src='./images/user.png' />
+<img src='./images/user.png' />.
 - User dashboard with profile info and data tables
-<img src='./images/dashboard.png' />~
+
+<img src='./images/dashboard.png' />
