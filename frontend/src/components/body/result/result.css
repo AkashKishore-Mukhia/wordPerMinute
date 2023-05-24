@@ -1,0 +1,13 @@
+.result-data {
+  background-color: #3B5998;
+  width: 60vw;
+  font-size: x-large;
+  margin-top: 3rem;
+  padding: 1rem;
+  border-radius: 10px;
+  font-family: math, monospace;
+}
+
+.result-data > div {
+  color: white;
+}

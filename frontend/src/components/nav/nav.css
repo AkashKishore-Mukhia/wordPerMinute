@@ -1,0 +1,87 @@
+:root {
+  --spacing: 2% auto 1% auto;
+  --nav-border-color: #4665ef;
+  --color: #2e59b2fa;
+}
+
+body {
+  margin: 0;
+}
+
+/* navbar */
+.navbar {
+  background-color: transparent;
+  backdrop-filter: blur(10px); /* Blur the background */
+  background-color: rgba(255, 255, 255, 0.2); /* Add some transparency */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add some shadow */
+  border-radius: 10px;
+}
+
+.nav-center {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+}
+
+.title {
+  width: 300px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.nav-links {
+  margin-left: auto;
+  margin-right: 2rem;
+  display: flex;
+}
+
+
+
+.nav-links > button {
+  text-decoration: none;
+  font-family: sans-serif;
+  font-weight: 700;
+  background: transparent;
+  font-size: 1em;
+  border: 2px solid transparent;
+  padding: 0.4em 0.6666666666667em;
+}
+
+#signup-btn {
+  background: var(--nav-border-color);
+  border-radius: 5px;
+  color: white;
+}
+
+#signup-btn:hover {
+  background-color: #2e59b2fa;
+  cursor: pointer;
+}
+
+.login-btn:hover, .home-btn:hover, .signout-btn:hover, .user-btn:hover{
+  cursor: pointer;
+  border: 2px solid var(--nav-border-color);
+  border-radius: 8px;
+}
+
+
+.nav-header:hover {
+  cursor: pointer;
+}
+
+.username {
+  margin: 0px;
+  color: var(--color);
+}
+
+.user-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.email > span {
+  font-weight: bold;
+}
