@@ -116,7 +116,7 @@ export default function Body({}) {
       acc,
       id
     };
-    const response = await fetch('https://comfortable-sandals-bee.cyclic.app/api/v1/user', {
+    const response = await fetch('https://wild-red-prawn-hat.cyclic.app/api/v1/user', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
