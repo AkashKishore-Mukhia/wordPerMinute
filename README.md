@@ -1,5 +1,5 @@
 
-[![logo](./public/static%20files/titleLogo.jpeg)](https://wordperminute.netlify.app/)
+[![logo](./frontend/public/static files/titleLogo.jpeg)](https://wordperminute.netlify.app/)
 
 ![mongoDB](https://img.shields.io/badge/mongodb-47A248?style=plastic&logo=mongodb&logoColor=white)
 ![express](https://img.shields.io/badge/express-yellow?style=plastic&logo=express&logoColor=white)
