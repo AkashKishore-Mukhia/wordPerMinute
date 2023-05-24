@@ -37,4 +37,4 @@ If you want to run frontend as well make sure to change all the `featch url` to 
 
 <img src='./images/user.png' />
 - User dashboard with profile info and data tables
-<img src='./images/dashboard.png' />
+<img src='./images/dashboard.png' />~
