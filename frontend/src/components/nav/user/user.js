@@ -19,7 +19,7 @@ export default function User({ id, username, email}) {
   }
 
   const fetchData = async (id) => {
-    const response = await fetch('https://comfortable-sandals-bee.cyclic.app/api/v1/user/data', {
+    const response = await fetch('https://wild-red-prawn-hat.cyclic.app/api/v1/user/data', {
       method: 'POST',
       headers: {
         "Content-Type": "application/json"

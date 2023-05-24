@@ -23,7 +23,7 @@ export default function Login() {
       setDisplay({prop: 'block', msg: 'please fill all the fields'});
       return;
     }
-    const response = await fetch('https://comfortable-sandals-bee.cyclic.app/api/v1/login', {
+    const response = await fetch('https://wild-red-prawn-hat.cyclic.app/api/v1/login', {
       method: 'POST', 
       headers: {
         'Content-Type': 'application/json'
