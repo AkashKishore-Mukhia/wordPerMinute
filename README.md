@@ -30,13 +30,13 @@ If you want to run frontend as well make sure to change all the `featch url` to 
  
 - See what you type, live errors, live timer, displays
 
-<img src='./images/error.png' />.
+<img src='./images/error.png' width=70% height=70% style="object-fit: cover;" />.
 - Login and Signup system to record user test history
 
-<img src='./images/signup.png' />.
+<img src='./images/signup.png' width=70% height=70% style="object-fit: cover;"/>.
 - Account system
 
-<img src='./images/user.png' />.
+<img src='./images/user.png' width=70% height=70% style="object-fit: cover;" />.
 - User dashboard with profile info and data tables
 
-<img src='./images/dashboard.png' />
+<img src='./images/dashboard.png' width=70% height=70% style="object-fit: cover;" />
