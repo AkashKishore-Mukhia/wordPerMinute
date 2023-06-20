@@ -1,9 +1,17 @@
-
+import { Toaster } from 'react-hot-toast'
 import Main from './components/main'
 
 function App() {
   return (
-    <Main />
+    <>
+      <Toaster
+      toastOptions={{
+        style: {
+          fontFamily: 'system-ui',
+        }
+      }} />
+      <Main />
+    </>
   );
 }
 

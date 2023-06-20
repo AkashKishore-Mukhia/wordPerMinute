@@ -8,6 +8,13 @@ body {
   margin: 0;
 }
 
+.navbar-container {
+  position: sticky;
+  top: 0;
+  left: 0;
+  background: white;
+}
+
 /* navbar */
 .navbar {
   background-color: transparent;

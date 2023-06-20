@@ -142,7 +142,7 @@ export default function Body({}) {
     }</div>
 
     <div className="input-box-container">
-      <input type="text" id="input-box" autoComplete="off" onInput={handleInput} ref={inputTag} style={ {display: inputDisplayStyle.displayProp}}></input>
+      <input type="text" id="input-box" autoComplete="off" onInput={handleInput} ref={inputTag} placeholder='type here' style={ {display: inputDisplayStyle.displayProp}}></input>
       <div className='type-again'>
         <button id="restart-btn" onClick={handleResetBtn} title='Type again'><FontAwesomeIcon icon="fa-solid fa-rotate" /></button>
       </div>

@@ -55,7 +55,7 @@ export default function Nav() {
 
   return (
     <>
-      <div>
+      <div className='navbar-container'>
         <nav className="navbar">
           <nav className="nav-center">
             <div className="nav-header">

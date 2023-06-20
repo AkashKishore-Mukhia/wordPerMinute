@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import toast from 'react-hot-toast'
 import './sign_up.css'
 import { useNavigate } from 'react-router-dom'
 import { useRef, useReducer } from 'react';
@@ -68,8 +69,8 @@ export default function SignUp() {
     setDisplay({prop: 'block', msg: 'email already in use'});
     return;
   }
+  toast.success('User Created');
   navigate('/login');
-
   }
 
 

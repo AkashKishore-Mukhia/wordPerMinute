@@ -1,6 +1,7 @@
 import React, { useEffect, useState, useMemo } from 'react'
 import { COLUMNS } from './columns'
 import { usePagination, useTable } from 'react-table';
+import { Chart } from "react-google-charts";
 import './user.css';
 
 export default function User({ id, username, email}) {
@@ -8,6 +9,13 @@ export default function User({ id, username, email}) {
   const [avgSpeed, setAvgSpeed] = useState(0);
   const [best, setBest] = useState(0);
   const [display, setDisplay] = useState({ pleaseWait: 'block' });
+  const [gpData, setGpData] = useState([
+    [
+      "test",
+      "Word Per Minute",
+      "Accuracy",
+    ],
+  ])
 
   const findAvarage = (rows) => {
     let sum = 0;
@@ -27,11 +35,15 @@ export default function User({ id, username, email}) {
       body: JSON.stringify({ id })
     });
     const userData = await response.json();
+    setDisplay({ pleaseWait: 'none' });
+    userData.data.map((data, index) => {
+      gpData.push([index + 1, Number(data.wordPerMinute), Number(data.accuracy)]);
+      setGpData(gpData);
+    })
     const dataArray = userData.data.reverse();
     setAvgSpeed(findAvarage(dataArray.slice(0, 10)));
     setBest(userData.best);
     setData(dataArray);
-    setDisplay({ pleaseWait: 'none' });
   }
 
 
@@ -54,10 +66,18 @@ export default function User({ id, username, email}) {
     prepareRow,
   } = tableInstance
 
+  const options = {
+    chart: {
+      title: "Box Office Earnings in First Two Weeks of Opening",
+      subtitle: "in millions of dollars (USD)",
+    },
+  };
+
 
   useEffect(() => {
     fetchData(id);
   }, []);
+
   const { pageIndex } = state;
 
   return (
@@ -135,6 +155,18 @@ export default function User({ id, username, email}) {
           </span>
           <button onClick={() => previousPage()} disabled={!canPreviousPage}>previous</button>
           <button onClick={() => nextPage()} disabled={!canNextPage}>next</button>
+        </div>
+      </div>
+
+      <div className='chart-container'>
+        <div className='chart'>
+          <Chart
+            chartType="Line"
+            width="70vw"
+            height="400px"
+            data={gpData}
+            options={options}
+          />
         </div>
       </div>
     </>

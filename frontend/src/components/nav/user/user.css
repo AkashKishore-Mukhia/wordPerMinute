@@ -1,3 +1,10 @@
+:root {
+  --border: 1px solid #ddd;
+  --box-padding: 10px;
+  --box-border-radius: 10px;
+}
+
+
 table {
   font-family: Arial, Helvetica, sans-serif;
   border-collapse: collapse;
@@ -37,8 +44,8 @@ button {
   margin: auto;
   margin-top: 1rem;
   border: 1px solid #cec7c7b0;
-  border-radius: 10px;
-  padding: 10px;
+  padding: var(--box-padding);
+  border-radius: var(--box-border-radius);
 }
 
 h2 {
@@ -70,4 +77,18 @@ h2 {
   border-radius: 5px;
   color: white;
   font-weight: 500;
+}
+
+
+.chart-container {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+
+.chart {
+  border: var(--border);
+  width: 70vw;
+  padding: var(--box-padding);
+  border-radius: var(--box-border-radius);
 }
