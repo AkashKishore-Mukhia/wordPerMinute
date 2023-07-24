@@ -2,17 +2,33 @@
   --spacing: 2% auto 1% auto;
 }
 
+html {
+  height: 100%;
+}
+
 body {
   margin: 0;
+  height: 100%;
+}
+
+#root {
+  height: 100%;
+}
+
+.container {
+  height: 87%;
+  display: grid;
+  grid: auto/ 1fr;
+  justify-items: center;
 }
 
 
-body {
+.sub-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  align-content: flex-end;
 }
+
 
 .text-container {
   height: auto;
@@ -25,7 +41,7 @@ body {
   margin: var(--spacing);
   background-color: #f6fbff;
   color: black;
-  margin: 5% auto auto;
+  margin-top: 5%;
 }
 
 
@@ -35,7 +51,7 @@ body {
 }
 
 .input-box-container {
-  margin: 10px auto auto 20%;
+  margin-top: 5%;
   display: flex;
     align-items: center;
     width: 60vw;

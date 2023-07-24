@@ -2,6 +2,7 @@ import React, { useEffect, useState, useMemo } from 'react'
 import { COLUMNS } from './columns'
 import { usePagination, useTable } from 'react-table';
 import { Chart } from "react-google-charts";
+import Footer from '../../footer/footer';
 import './user.css';
 
 export default function User({ id, username, email}) {
@@ -169,6 +170,7 @@ export default function User({ id, username, email}) {
           />
         </div>
       </div>
+      <Footer />
     </>
   )
 }

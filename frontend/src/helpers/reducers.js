@@ -1,4 +1,4 @@
-import { validateName, validateEmail, validatePassword } from "../../nav/sign-up/validators";
+import { validateName, validateEmail, validatePassword } from "../components/nav/sign-up/validators";
 
 
 export function displayReducer(resultDisplayStyle, action) {

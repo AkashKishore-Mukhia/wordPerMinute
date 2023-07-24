@@ -7,6 +7,7 @@ import {
 import useStore from '../store/store'
 
 import Nav from './nav/nav'
+import Footer from './footer/footer'
 import Body from './body/body'
 import SignUp from './nav/sign-up/sign_up'
 import Login from './nav/login/login'
