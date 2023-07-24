@@ -69,8 +69,8 @@ export default function User({ id, username, email}) {
 
   const options = {
     chart: {
-      title: "Box Office Earnings in First Two Weeks of Opening",
-      subtitle: "in millions of dollars (USD)",
+      title: "Word per Minute and Accuracy",
+      subtitle: "",
     },
   };
 
